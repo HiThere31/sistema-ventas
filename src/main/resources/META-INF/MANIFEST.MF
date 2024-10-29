@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Main-Class: com.otn.sistemaVentas.Main
+Class-Path: javafx-controls-19.jar javafx-graphics-19.jar mysql-connecto
+ r-j-8.0.32.jar javafx-graphics-19-mac-aarch64.jar javafx-base-19-mac-aa
+ rch64.jar protobuf-java-3.21.9.jar javafx-controls-19-mac-aarch64.jar j
+ avafx-base-19.jar
+
