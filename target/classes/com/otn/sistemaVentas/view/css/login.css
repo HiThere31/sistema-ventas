@@ -1,0 +1,51 @@
+.root {
+    -fx-background-color: #f4f4f9;
+    -fx-padding: 40;
+}
+
+.title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: #666;
+    -fx-padding: 0 0 20 0;
+}
+
+.input-field {
+    -fx-pref-width: 250px;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #ccc;
+    -fx-padding: 8 10;
+}
+
+.login-button {
+    -fx-background-color: #3b82f6;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 250px;
+    -fx-padding: 10;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-cursor: hand;
+}
+
+.login-button:hover {
+    -fx-background-color: #2563eb;
+}
+
+.link {
+    -fx-font-size: 12px;
+    -fx-text-fill: #3b82f6;
+    -fx-cursor: hand;
+}
+
+.link:hover {
+    -fx-underline: true;
+}

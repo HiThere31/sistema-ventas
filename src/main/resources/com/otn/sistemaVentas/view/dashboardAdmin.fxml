@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="topPaquetesBox" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.otn.sistemaVentas.view.dashboardAdminControler">
+
+   <stylesheets>
+      <URL value="@./css/dashboardAdmin.css" />
+   </stylesheets>
+
+   <children>
+      <VBox fx:id="navBar" alignment="TOP_CENTER" prefHeight="768.0" prefWidth="101.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+         <children>
+            <Button mnemonicParsing="false" prefWidth="40.0" text="Home">
+               <VBox.margin>
+                  <Insets bottom="25.0" top="25.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" text="Button">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" text="Button">
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+            </Button>
+            <VBox fx:id="separador" VBox.vgrow="ALWAYS" />
+            <Button mnemonicParsing="false" text="Salir">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="101.0" layoutY="302.0" prefHeight="165.0" prefWidth="1074.0" AnchorPane.leftAnchor="101.0" AnchorPane.topAnchor="302.0">
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+      
+            <!-- Cuadro para Ventas Diarias -->
+            <VBox fx:id="ventasDiariasBox" alignment="TOP_CENTER" prefHeight="138.0" prefWidth="155.0" styleClass="info-box">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="160.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="139.0" styleClass="info-title" text=" Diarias" />
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="ventasDiariasLabel" styleClass="info-content" text="0" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+      
+            <VBox fx:id="ventasMensualesBox" alignment="CENTER" prefHeight="182.0" prefWidth="155.0" styleClass="info-box">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" styleClass="info-title" text="Mensuales" />
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="ventasMensualesLabel" styleClass="info-content" text="0" />
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="182.0" prefWidth="155.0" styleClass="info-box">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="100.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="TOP" styleClass="info-title" text="Más vendidos" />
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="83.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="topPaquete1Label" styleClass="info-content" text="Destino 1" />
+                        <Label fx:id="topPaquete2Label" styleClass="info-content" text="Destino 2" />
+                        <Label fx:id="topPaquete3Label" styleClass="info-content" text="Destino 3" />
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+      
+            <VBox fx:id="topVendedoresBox" alignment="TOP_CENTER" prefHeight="182.0" prefWidth="155.0" styleClass="info-box">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="23.0" prefWidth="111.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="TOP" styleClass="info-title" text="Top 3 del mes" />
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="75.0" prefWidth="111.0">
+                     <children>
+                        <Label fx:id="topVendedor1Label" styleClass="info-content" text="Vendedor 1" />
+                        <Label fx:id="topVendedor2Label" styleClass="info-content" text="Vendedor 2" />
+                        <Label fx:id="topVendedor3Label" styleClass="info-content" text="Vendedor 3" />
+                     </children>
+                  </VBox>
+               </children>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox fx:id="ingresosMesBox" alignment="TOP_CENTER" prefHeight="182.0" prefWidth="155.0" styleClass="info-box">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Ingresos del mes" alignment="CENTER" contentDisplay="TOP" styleClass="info-title" />
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="151.0" prefWidth="155.0"  alignment="CENTER" >
+                     <children>
+                        <Label fx:id="ingresosMesLabel" text="0" styleClass="info-content"/>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children></HBox>
+   </children>
+</AnchorPane>

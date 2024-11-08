@@ -1,10 +1,10 @@
-package com.otn.sistemaVentas.controller;
+package com.otn.sistemaVentas.view;
 
 import com.otn.sistemaVentas.model.Venta;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
-public class VentaController {
+public class loginController {
     @FXML
     private TextField compradorField;
     @FXML
